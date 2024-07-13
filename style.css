@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(113, 196, 215);
+}
+
+h1 {
+    padding: 2px;
+    margin-left: 450px;
+    margin-top: 10px;
+    border: 4px solid black;
+    width: 590px;
+    border-radius: 9px;
+    outline: 3px solid black;
+    outline-offset: 3px;
+}
+
+.ball {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 70px;
+    border: 4px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: AnimateX 5s linear  infinite, AnimateY 1s ease-out infinite alternate,Animate 5s infinite ; 
+}
+
+.container {
+    margin-left: 150px;
+    margin-top: 30px;
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    background-image: url(bgImg.jpg);
+outline: 3px solid black;
+outline-offset: 7px;
+    border: 7px solid black;
+}
+
+@keyframes AnimateX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 90%
+    }
+
+}
+
+@keyframes AnimateY {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 78%
+    }
+
+}
+
+@keyframes Animate {
+    0%{background-color: rgb(245, 241, 241);}
+    20%{background-color: rgb(245, 202, 202);}
+    40%{background-color: rgb(236, 156, 156);}
+    60%{background-color: rgb(238, 118, 118);}
+    80%{background-color: rgb(241, 58, 58);}
+    100%{background-color: red;}
+    
+}
